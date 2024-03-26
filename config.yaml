@@ -20,7 +20,7 @@
 # Example: "Custom" will yield the family "Rec Mono Custom". 
 # Keep under 13 characters in length to avoid potential OS bugs.
 
-Family Name: Custom 
+Family Name: V 
 
 # -----------------------------------------------------------------------------
 # Font Styles
@@ -38,7 +38,7 @@ Fonts:
 
   Regular:
     MONO: 1
-    CASL: 0
+    CASL: 1
     wght: 425
     slnt: 0
     CRSV: 0
@@ -48,11 +48,11 @@ Fonts:
     CASL: 1
     wght: 425
     slnt: -10
-    CRSV: 1
+    CRSV: 0.5
 
   Bold:
     MONO: 1
-    CASL: 0
+    CASL: 1
     wght: 750
     slnt: 0
     CRSV: 0
@@ -62,7 +62,7 @@ Fonts:
     CASL: 1
     wght: 750
     slnt: -10
-    CRSV: 1
+    CRSV: 0.5
 
 # -----------------------------------------------------------------------------
 # Font Features
@@ -97,16 +97,20 @@ Code Ligatures: True
 # If you want to turn off all features, you can specify an empty array in YAML like this:
 # Features: []
 
+# ====================================
+# abcdefghijklmnopqrstuvwxyz
+# flag rust last new test
+# nice code nvim jit bash
+# ====================================
+
 # (Keep the hyphen before each list item)
 Features:
-- ss01 # Single-story a
-- ss02 # Single-story g
-- ss03 # Simplified f
-- ss05 # Simplified l
-- ss06 # Simplified r
-- ss08 # Serifless L and Z
-- ss09 # Simplified 6 and 9
-- ss10 # Dotted 0
+- ss01 # a
+- ss02 # g
+- ss03 # f
+- ss04 # i (NOT WORKING)
+- ss07 # kwxyz (NOT WORKING)
+# both Roman & Cursive below
 - ss11 # Simplified 1
 - ss12 # Simplified @
 
